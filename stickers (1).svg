@@ -1,0 +1,87 @@
+<svg viewBox="0 0 860 160" xmlns="http://www.w3.org/2000/svg" width="860" height="160" role="img">
+  <defs>
+    <style>
+      .bg-base { fill:#0d1117; }
+      @keyframes borderFlicker {
+        0%,92%,100% { stroke:#30363d; }
+        93% { stroke:#ff2e63; } 94% { stroke:#30363d; }
+        96% { stroke:#08d9d6; } 97% { stroke:#30363d; }
+      }
+      .frame { animation: borderFlicker 4s infinite; }
+      @keyframes labelPulse { 0%,100%{opacity:0.55;} 50%{opacity:1;} }
+      .label-text { animation: labelPulse 2.5s ease-in-out infinite; }
+      @keyframes idxFlicker { 0%,100%{opacity:0.4;} 50%{opacity:0.15;} 51%{opacity:0.6;} }
+      .index-text { animation: idxFlicker 3s infinite; }
+      /* float only on Y — each sticker has its own transform-origin so rotation stays put */
+      @keyframes bob { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-7px);} }
+      .s0 { animation: bob 3.2s ease-in-out infinite; }
+      .s1 { animation: bob 3.6s ease-in-out infinite 0.4s; }
+      .s2 { animation: bob 2.8s ease-in-out infinite 0.2s; }
+      .s3 { animation: bob 4.0s ease-in-out infinite 0.6s; }
+      .s4 { animation: bob 3.4s ease-in-out infinite 0.8s; }
+      .s5 { animation: bob 3.8s ease-in-out infinite 0.3s; }
+    </style>
+  </defs>
+
+  <rect width="860" height="160" rx="6" class="bg-base"/>
+  <rect x="1" y="1" width="858" height="158" rx="6" fill="none" stroke="#30363d" stroke-width="1.5" class="frame"/>
+
+  <rect x="40" y="22" width="150" height="20" rx="2" fill="none" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="36" font-family="'Courier New', monospace" font-size="10" fill="#8b949e" letter-spacing="2" class="label-text">[ STICKER WALL ]</text>
+  <text x="820" y="36" font-family="'Courier New', monospace" font-size="10" fill="#6e7681" letter-spacing="1" text-anchor="end" class="index-text">04 / VIBES</text>
+
+  <!-- Each sticker: outer <g> = position (translate), inner <g> = bob animation, innermost = static rotation -->
+  <g transform="translate(110,100)">
+    <g class="s0">
+      <g transform="rotate(-12)">
+        <rect x="-46" y="-18" width="92" height="36" rx="3" fill="#ff2e63"/>
+        <text x="0" y="6" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#0d1117" text-anchor="middle" letter-spacing="1">COFFEE++</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(250,100)">
+    <g class="s1">
+      <g transform="rotate(8)">
+        <rect x="-48" y="-18" width="96" height="36" rx="3" fill="#08d9d6"/>
+        <text x="0" y="6" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#0d1117" text-anchor="middle" letter-spacing="1">404 BUGS</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(380,100)">
+    <g class="s2">
+      <g transform="rotate(-5)">
+        <rect x="-32" y="-22" width="64" height="44" rx="3" fill="none" stroke="#e6edf3" stroke-width="2"/>
+        <text x="0" y="9" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#e6edf3" text-anchor="middle">{ }</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(500,100)">
+    <g class="s3">
+      <g transform="rotate(13)">
+        <rect x="-45" y="-17" width="90" height="34" rx="3" fill="#3fb950"/>
+        <text x="0" y="5" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#0d1117" text-anchor="middle" letter-spacing="1">DEPLOY</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(640,100)">
+    <g class="s4">
+      <g transform="rotate(-9)">
+        <rect x="-52" y="-20" width="104" height="40" rx="3" fill="#161b22" stroke="#ff2e63" stroke-width="1.5"/>
+        <text x="0" y="5" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff2e63" text-anchor="middle" letter-spacing="1">&lt;/STREET&gt;</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(770,100)">
+    <g class="s5">
+      <g transform="rotate(11)">
+        <rect x="-32" y="-20" width="64" height="40" rx="3" fill="#161b22" stroke="#08d9d6" stroke-width="1.5"/>
+        <path d="M2,-12 l-10,16 l6,0 l-3,10 l11,-17 l-6,0 z" fill="#08d9d6"/>
+      </g>
+    </g>
+  </g>
+</svg>
