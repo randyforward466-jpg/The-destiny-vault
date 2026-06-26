@@ -1,0 +1,108 @@
+<svg viewBox="0 0 860 130" xmlns="http://www.w3.org/2000/svg" width="860" height="130" role="img">
+  <defs>
+    <style>
+      .bg-base { fill:#0d1117; }
+      @keyframes borderFlicker {
+        0%,92%,100% { stroke:#30363d; }
+        93% { stroke:#ff2e63; } 94% { stroke:#30363d; }
+        96% { stroke:#08d9d6; } 97% { stroke:#30363d; }
+      }
+      .frame { animation: borderFlicker 4s infinite; }
+      @keyframes labelPulse { 0%,100%{opacity:0.55;} 50%{opacity:1;} }
+      .label-text { animation: labelPulse 2.5s ease-in-out infinite; }
+      @keyframes floatChip { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-5px);} }
+      .chip-0 { animation: floatChip 2.4s ease-in-out infinite; }
+      .chip-1 { animation: floatChip 2.4s ease-in-out infinite 0.2s; }
+      .chip-2 { animation: floatChip 2.4s ease-in-out infinite 0.4s; }
+      .chip-3 { animation: floatChip 2.4s ease-in-out infinite 0.6s; }
+      .chip-4 { animation: floatChip 2.4s ease-in-out infinite 0.8s; }
+      .chip-5 { animation: floatChip 2.4s ease-in-out infinite 1.0s; }
+      .chip-6 { animation: floatChip 2.4s ease-in-out infinite 1.2s; }
+      .chip-7 { animation: floatChip 2.4s ease-in-out infinite 1.4s; }
+      @keyframes chipGlow { 0%,100%{stroke:#30363d;} 50%{stroke:#08d9d6;} }
+      .chip-box { animation: chipGlow 3s ease-in-out infinite; }
+      @keyframes idxFlicker { 0%,100%{opacity:0.4;} 50%{opacity:0.15;} 51%{opacity:0.6;} }
+      .index-text { animation: idxFlicker 3s infinite; }
+    </style>
+  </defs>
+
+  <rect width="860" height="130" rx="6" class="bg-base"/>
+  <rect x="1" y="1" width="858" height="128" rx="6" fill="none" stroke="#30363d" stroke-width="1.5" class="frame"/>
+
+  <rect x="40" y="22" width="120" height="20" rx="2" fill="none" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="36" font-family="'Courier New', monospace" font-size="10" fill="#8b949e" letter-spacing="2" class="label-text">[ TECH STACK ]</text>
+  <text x="820" y="36" font-family="'Courier New', monospace" font-size="10" fill="#6e7681" letter-spacing="1" text-anchor="end" class="index-text">02 / STACK</text>
+
+  <g transform="translate(40, 65)">
+    <!-- JS -->
+    <g class="chip-0">
+      <rect x="0" y="0" width="92" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <rect x="10" y="11" width="22" height="22" rx="3" fill="#F7DF1E"/>
+      <text x="21" y="28" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0d1117" text-anchor="middle">JS</text>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">JS</text>
+    </g>
+    <!-- TS -->
+    <g class="chip-1" transform="translate(102,0)">
+      <rect x="0" y="0" width="100" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <rect x="10" y="11" width="22" height="22" rx="3" fill="#3178C6"/>
+      <text x="21" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">TS</text>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">TS</text>
+    </g>
+    <!-- React -->
+    <g class="chip-2" transform="translate(212,0)">
+      <rect x="0" y="0" width="108" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <g transform="translate(21,22)">
+        <circle r="2.5" fill="#61DAFB"/>
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.3"/>
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(60)"/>
+        <ellipse rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(120)"/>
+      </g>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">REACT</text>
+    </g>
+    <!-- HTML5 -->
+    <g class="chip-3" transform="translate(330,0)">
+      <rect x="0" y="0" width="104" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <path d="M11,11 l20,0 l-2,22 l-8,3 l-8,-3 z" fill="#E34F26"/>
+      <path d="M21,14 l0,19 l6,-2 l1.5,-17 z" fill="#EF652A"/>
+      <path d="M15,18 l12,0 l-0.4,4 l-7.6,0 l0.3,3 l7,0 l-0.6,5 l-5.5,1.5 l-5.5,-1.5 l-0.3,-3.5 l3,0 l0.15,1.8 l2.65,0.7 l2.65,-0.7 l0.2,-2.5 l-8.4,0 z" fill="#ffffff"/>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">HTML5</text>
+    </g>
+    <!-- CSS3 -->
+    <g class="chip-4" transform="translate(444,0)">
+      <rect x="0" y="0" width="98" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <path d="M11,11 l20,0 l-2,22 l-8,3 l-8,-3 z" fill="#1572B6"/>
+      <path d="M21,14 l0,19 l6,-2 l1.5,-17 z" fill="#33A9DC"/>
+      <path d="M15,18 l12,0 l-0.4,4 l-7.6,0 l0.3,3 l7,0 l-0.6,5 l-5.5,1.5 l-5.5,-1.5 l-0.3,-3.5 l3,0 l0.15,1.8 l2.65,0.7 l2.65,-0.7 l0.2,-2.5 l-8.4,0 z" fill="#ffffff"/>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">CSS3</text>
+    </g>
+    <!-- Python -->
+    <g class="chip-5" transform="translate(552,0)">
+      <rect x="0" y="0" width="112" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <g transform="translate(10,11)">
+        <path d="M11,0 C6,0 6,3 6,5 l0,3 l5,0 l0,1 l-8,0 C1,9 0,11 0,15 C0,19 1,21 4,21 l2,0 l0,-4 C6,14 7,13 10,13 l5,0 C17,13 18,12 18,9 l0,-4 C18,2 17,0 11,0 z M8,3 a1.2,1.2 0 1,1 0,0.01 z" fill="#3776AB"/>
+        <path d="M11,22 C16,22 16,19 16,17 l0,-3 l-5,0 l0,-1 l8,0 C21,13 22,11 22,7 C22,3 21,1 18,1 l-2,0 l0,4 C16,8 15,9 12,9 l-5,0 C5,9 4,10 4,13 l0,4 C4,20 5,22 11,22 z M14,19 a1.2,1.2 0 1,1 0,-0.01 z" fill="#FFD43B"/>
+      </g>
+      <text x="42" y="27" font-family="'Courier New', monospace" font-size="9" fill="#e6edf3">PYTHON</text>
+    </g>
+    <!-- AWS -->
+    <g class="chip-6" transform="translate(674,0)">
+      <rect x="0" y="0" width="68" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <text x="21" y="26" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FF9900" text-anchor="middle">aws</text>
+      <path d="M11,30 q10,4 20,0" fill="none" stroke="#FF9900" stroke-width="1.5"/>
+      <text x="46" y="27" font-family="'Courier New', monospace" font-size="8" fill="#e6edf3">AWS</text>
+    </g>
+    <!-- Git -->
+    <g class="chip-7" transform="translate(752,0)">
+      <rect x="0" y="0" width="68" height="44" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1" class="chip-box"/>
+      <g transform="translate(10,11)">
+        <rect x="0" y="0" width="22" height="22" rx="3" fill="#F05032" transform="rotate(45 11 11)"/>
+        <circle cx="6" cy="11" r="2.2" fill="#fff"/>
+        <circle cx="15" cy="7" r="2.2" fill="#fff"/>
+        <circle cx="15" cy="15" r="2.2" fill="#fff"/>
+        <line x1="6" y1="11" x2="15" y2="7" stroke="#fff" stroke-width="1.3"/>
+        <line x1="6" y1="11" x2="15" y2="15" stroke="#fff" stroke-width="1.3"/>
+      </g>
+      <text x="46" y="27" font-family="'Courier New', monospace" font-size="8" fill="#e6edf3">GIT</text>
+    </g>
+  </g>
+</svg>
